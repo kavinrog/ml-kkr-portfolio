@@ -17,3 +17,7 @@ def root():
 def predict(request: QARequest):
     answer = answer_question(request.question, request.context)
     return {"answer": answer}
+
+@app.get("/health")
+def health():
+    return {"status": "healthy"}    
