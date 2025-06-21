@@ -15,3 +15,10 @@ def get_model():
     """
     return qa_pipeline      
 
+def get_model_name():
+    """
+    Returns the name of the model.
+    This function is useful for testing purposes.
+    """
+    return "distilbert-base-uncased-distilled-squad"
+
