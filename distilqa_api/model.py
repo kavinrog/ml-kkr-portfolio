@@ -34,3 +34,20 @@ def get_model_version():
     This function is useful for testing purposes.
     """
     return "v1.0.0"
+def get_model_description():
+    """
+    Returns a description of the model.
+    This function is useful for testing purposes.
+    """
+    return "DistilBERT model fine-tuned on the SQuAD dataset for question answering tasks."
+def get_model_metadata():
+    """
+    Returns metadata about the model.
+    This function is useful for testing purposes.
+    """
+    return {
+        "name": get_model_name(),
+        "type": get_model_type(),
+        "version": get_model_version(),
+        "description": get_model_description()
+    }
