@@ -51,3 +51,16 @@ def get_model_metadata():
         "version": get_model_version(),
         "description": get_model_description()
     }
+
+def get_model_info():
+    """
+    Returns a dictionary with model information.
+    This function is useful for testing purposes.
+    """
+    return {
+        "name": get_model_name(),
+        "type": get_model_type(),
+        "version": get_model_version(),
+        "description": get_model_description(),
+        "metadata": get_model_metadata()
+    }
