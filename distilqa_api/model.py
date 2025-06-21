@@ -7,3 +7,11 @@ qa_pipeline = pipeline("question-answering", model="distilbert-base-uncased-dist
 def answer_question(question: str, context: str) -> str:
     result = qa_pipeline(question=question, context=context)
     return result['answer']
+
+def get_model():
+    """
+    Returns the loaded model.
+    This function is useful for testing purposes.
+    """
+    return qa_pipeline      
+
