@@ -22,3 +22,15 @@ def get_model_name():
     """
     return "distilbert-base-uncased-distilled-squad"
 
+def get_model_type():
+    """
+    Returns the type of the model.
+    This function is useful for testing purposes.
+    """
+    return "transformers"
+def get_model_version():
+    """
+    Returns the version of the model.
+    This function is useful for testing purposes.
+    """
+    return "v1.0.0"
