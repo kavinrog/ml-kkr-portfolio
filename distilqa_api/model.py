@@ -64,3 +64,10 @@ def get_model_info():
         "description": get_model_description(),
         "metadata": get_model_metadata()
     }
+    
+def is_model_loaded():
+    """
+    Checks if the model pipeline is loaded.
+    Returns True if loaded, False otherwise.
+    """
+    return qa_pipeline is not None
