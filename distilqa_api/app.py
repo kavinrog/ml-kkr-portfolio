@@ -21,3 +21,11 @@ def predict(request: QARequest):
 @app.get("/health")
 def health():
     return {"status": "healthy"}    
+
+@app.get("/info")
+def info():
+    return {
+        "name": "DistilQA API",
+        "version": "1.0.0",
+        "description": "A simple API for question answering using DistilBERT."
+    }
